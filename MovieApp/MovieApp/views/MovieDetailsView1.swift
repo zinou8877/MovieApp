@@ -33,6 +33,8 @@ struct MovieDetailsView1: View {
                 
                 Text(movieDetail?.title ??  MockData.movies[1].title)
                     .font(.title)
+                    .fixedSize(horizontal: false, vertical: true)
+                     .multilineTextAlignment(.center)
                     .fontWeight(.semibold)
                     .foregroundColor(Color(.label))
                     .scaledToFit()
