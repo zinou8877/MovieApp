@@ -29,6 +29,7 @@ struct MovieDetailsView1: View {
                 .frame(width: 280, height: 300)
                 .clipShape(RoundedRectangle(cornerRadius: 12))
                 .scaledToFit()
+                .shadow(color: Color.black.opacity(0.3), radius: 10, x: 0, y: 5)
                 
                 
                 Text(movieDetail?.title ??  MockData.movies[1].title)
